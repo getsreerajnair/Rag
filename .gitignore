@@ -1,4 +1,3 @@
 .venv/
-notebook/
 __pycache__/
 *.egg-info

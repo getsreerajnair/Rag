@@ -1,0 +1,26 @@
+[
+  {
+    "question": "According to the product policy, what is the return window (days) for unopened Beverages? Return an integer.",
+    "route": "rag"
+  },
+  {
+    "question": "During 'Summer Beverages 1997' as defined in the marketing calendar, which product category had the highest total quantity sold? Return {category:str, quantity:int}.",
+    "route": "hybrid"
+  },
+  {
+    "question": "Using the AOV definition from the KPI docs, what was the Average Order Value during 'Winter Classics 1997",
+    "route": "hybrid"
+  },
+  {
+    "question": "Top 3 products by total revenue all-time. Revenue uses Order Details: SUM(UnitPrice*Quantity*(1-Discount)). Return list[{product:str, revenue:float}].",
+    "route": "sql"
+  },
+  {
+    "question": "Total revenue from the 'Beverages' category during 'Summer Beverages 1997' dates. Return a float rounded to 2 decimals.",
+    "route": "hybrid"
+  },
+  {
+    "question": "Per the KPI definition of gross margin, who was the top customer by gross margin in 1997? Assume CostOfGoods is approximated by 70% of UnitPrice if not available. Return {customer:str, margin:float}.",
+    "route": "hybrid"
+  }
+]
